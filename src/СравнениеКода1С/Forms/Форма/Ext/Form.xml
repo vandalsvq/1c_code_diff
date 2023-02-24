@@ -260,6 +260,207 @@
 								</TextDocumentField>
 							</ChildItems>
 						</UsualGroup>
+						<UsualGroup name="ГруппаНастройкиКоманднаяПанельСтруктуры" id="463">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройки командная панель структуры</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройки командная панель структуры</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНастройкиКоманднаяПанельСтруктурыРасширеннаяПодсказка" id="464"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаНастройкиСтруктурыМодуля" id="453">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа настройки структуры модуля</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа настройки структуры модуля</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаНастройкиСтруктурыМодуляРасширеннаяПодсказка" id="454"/>
+									<ChildItems>
+										<InputField name="ВидСтруктурыМодуля" id="450">
+											<DataPath>ВидСтруктурыМодуля</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Вид структуры</v8:content>
+												</v8:item>
+											</Title>
+											<Width>20</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>20</MaxWidth>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Дерево областей и методов</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">0</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Таблица методов</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">1</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ВидСтруктурыМодуляКонтекстноеМеню" id="451"/>
+											<ExtendedTooltip name="ВидСтруктурыМодуляРасширеннаяПодсказка" id="452"/>
+											<Events>
+												<Event name="OnChange">ВидСтруктурыМодуляПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ФильтрДерева" id="447">
+											<DataPath>ФильтрДерева</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Фильтр</v8:content>
+												</v8:item>
+											</Title>
+											<Width>20</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>20</MaxWidth>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Нет фильтра</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">0</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Показывать отличия модулей</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">1</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Показывать измененные</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">2</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Показывать присутствующие только в Файл 1</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">3</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Показывать присутствующие только в Файл 2</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">4</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Показывать неизмененные</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">5</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ФильтрДереваКонтекстноеМеню" id="448"/>
+											<ExtendedTooltip name="ФильтрДереваРасширеннаяПодсказка" id="449"/>
+											<Events>
+												<Event name="OnChange">ФильтрДереваПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<CommandBar name="ГруппаКоманднаяПанельДеревоСравнения" id="461">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа командная панель дерево сравнения</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа командная панель дерево сравнения</v8:content>
+										</v8:item>
+									</ToolTip>
+									<CommandSource>Item.СтруктураМодуля</CommandSource>
+									<ExtendedTooltip name="ГруппаКоманднаяПанельДеревоСравненияРасширеннаяПодсказка" id="462"/>
+								</CommandBar>
+							</ChildItems>
+						</UsualGroup>
 						<Table name="СтруктураМодуля" id="323">
 							<Representation>Tree</Representation>
 							<ChangeRowSet>false</ChangeRowSet>
@@ -268,6 +469,8 @@
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<DataPath>СтруктураМодуля</DataPath>
+							<SearchStringLocation>CommandBar</SearchStringLocation>
+							<SearchControlLocation>CommandBar</SearchControlLocation>
 							<ContextMenu name="СтруктураМодуляКонтекстноеМеню" id="324"/>
 							<AutoCommandBar name="СтруктураМодуляКоманднаяПанель" id="325">
 								<Autofill>false</Autofill>
@@ -334,9 +537,105 @@
 											<ContextMenu name="СтруктураМодуляИмя1КонтекстноеМеню" id="337"/>
 											<ExtendedTooltip name="СтруктураМодуляИмя1РасширеннаяПодсказка" id="338"/>
 										</InputField>
+										<InputField name="СтруктураМодуляТипМетода1" id="455">
+											<DataPath>СтруктураМодуля.ТипМетода1</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Тип метода</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Тип метода</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<EditMode>EnterOnInput</EditMode>
+											<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+											<Width>2</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>2</MaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<TextColor>web:FireBrick</TextColor>
+											<ContextMenu name="СтруктураМодуляТипМетода1КонтекстноеМеню" id="456"/>
+											<ExtendedTooltip name="СтруктураМодуляТипМетода1РасширеннаяПодсказка" id="457"/>
+										</InputField>
+										<ColumnGroup name="СтруктураМодуляГруппаСвойстваМетода1" id="443">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Структура модуля группа свойства метода1</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Структура модуля группа свойства метода1</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="СтруктураМодуляГруппаСвойстваМетода1РасширеннаяПодсказка" id="444"/>
+											<ChildItems>
+												<CheckBoxField name="СтруктураМодуляЭтоАсинх1" id="421">
+													<DataPath>СтруктураМодуля.ЭтоАсинх1</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Асинх</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="СтруктураМодуляЭтоАсинх1КонтекстноеМеню" id="422"/>
+													<ExtendedTooltip name="СтруктураМодуляЭтоАсинх1РасширеннаяПодсказка" id="423"/>
+												</CheckBoxField>
+												<CheckBoxField name="СтруктураМодуляЭтоЭкспорт1" id="424">
+													<DataPath>СтруктураМодуля.ЭтоЭкспорт1</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Экспорт</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="СтруктураМодуляЭтоЭкспорт1КонтекстноеМеню" id="425"/>
+													<ExtendedTooltip name="СтруктураМодуляЭтоЭкспорт1РасширеннаяПодсказка" id="426"/>
+												</CheckBoxField>
+												<InputField name="СтруктураМодуляДирективаКомпиляции1" id="427">
+													<DataPath>СтруктураМодуля.ДирективаКомпиляции1</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Компиляция</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<Width>12</Width>
+													<ContextMenu name="СтруктураМодуляДирективаКомпиляции1КонтекстноеМеню" id="428"/>
+													<ExtendedTooltip name="СтруктураМодуляДирективаКомпиляции1РасширеннаяПодсказка" id="429"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
 										<InputField name="СтруктураМодуляЗнак1" id="339">
 											<DataPath>СтруктураМодуля.Знак1</DataPath>
-											<TitleLocation>None</TitleLocation>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>+/-</v8:content>
+												</v8:item>
+											</Title>
 											<HorizontalAlign>Center</HorizontalAlign>
 											<EditMode>EnterOnInput</EditMode>
 											<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
@@ -362,6 +661,7 @@
 											<AutoMaxWidth>false</AutoMaxWidth>
 											<MaxWidth>12</MaxWidth>
 											<HorizontalStretch>false</HorizontalStretch>
+											<TextColor>web:SteelBlue</TextColor>
 											<ContextMenu name="СтруктураМодуляСтроки1КонтекстноеМеню" id="343"/>
 											<ExtendedTooltip name="СтруктураМодуляСтроки1РасширеннаяПодсказка" id="344"/>
 										</InputField>
@@ -400,9 +700,105 @@
 											<ContextMenu name="СтруктураМодуляИмя2КонтекстноеМеню" id="349"/>
 											<ExtendedTooltip name="СтруктураМодуляИмя2РасширеннаяПодсказка" id="350"/>
 										</InputField>
+										<InputField name="СтруктураМодуляТипМетода2" id="458">
+											<DataPath>СтруктураМодуля.ТипМетода2</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Тип метода</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Тип метода</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<EditMode>EnterOnInput</EditMode>
+											<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+											<Width>2</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>2</MaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<TextColor>web:FireBrick</TextColor>
+											<ContextMenu name="СтруктураМодуляТипМетода2КонтекстноеМеню" id="459"/>
+											<ExtendedTooltip name="СтруктураМодуляТипМетода2РасширеннаяПодсказка" id="460"/>
+										</InputField>
+										<ColumnGroup name="СтруктураМодуляГруппаСвойстваМетода2" id="445">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Структура модуля группа свойства метода2</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Структура модуля группа свойства метода2</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="СтруктураМодуляГруппаСвойстваМетода2РасширеннаяПодсказка" id="446"/>
+											<ChildItems>
+												<CheckBoxField name="СтруктураМодуляЭтоАсинх2" id="430">
+													<DataPath>СтруктураМодуля.ЭтоАсинх2</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Асинх</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="СтруктураМодуляЭтоАсинх2КонтекстноеМеню" id="431"/>
+													<ExtendedTooltip name="СтруктураМодуляЭтоАсинх2РасширеннаяПодсказка" id="432"/>
+												</CheckBoxField>
+												<CheckBoxField name="СтруктураМодуляЭтоЭкспорт2" id="433">
+													<DataPath>СтруктураМодуля.ЭтоЭкспорт2</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Экспорт</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="СтруктураМодуляЭтоЭкспорт2КонтекстноеМеню" id="434"/>
+													<ExtendedTooltip name="СтруктураМодуляЭтоЭкспорт2РасширеннаяПодсказка" id="435"/>
+												</CheckBoxField>
+												<InputField name="СтруктураМодуляДирективаКомпиляции2" id="436">
+													<DataPath>СтруктураМодуля.ДирективаКомпиляции2</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Компиляция</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<Width>12</Width>
+													<ContextMenu name="СтруктураМодуляДирективаКомпиляции2КонтекстноеМеню" id="437"/>
+													<ExtendedTooltip name="СтруктураМодуляДирективаКомпиляции2РасширеннаяПодсказка" id="438"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
 										<InputField name="СтруктураМодуляЗнак2" id="351">
 											<DataPath>СтруктураМодуля.Знак2</DataPath>
-											<TitleLocation>None</TitleLocation>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>+/-</v8:content>
+												</v8:item>
+											</Title>
 											<HorizontalAlign>Center</HorizontalAlign>
 											<EditMode>EnterOnInput</EditMode>
 											<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
@@ -428,11 +824,34 @@
 											<AutoMaxWidth>false</AutoMaxWidth>
 											<MaxWidth>12</MaxWidth>
 											<HorizontalStretch>false</HorizontalStretch>
+											<TextColor>web:SteelBlue</TextColor>
 											<ContextMenu name="СтруктураМодуляСтроки2КонтекстноеМеню" id="355"/>
 											<ExtendedTooltip name="СтруктураМодуляСтроки2РасширеннаяПодсказка" id="356"/>
 										</InputField>
 									</ChildItems>
 								</ColumnGroup>
+								<CheckBoxField name="СтруктураМодуляОбластьИзменена" id="400">
+									<DataPath>СтруктураМодуля.ОбластьИзменена</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>#</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Изменилась область у метода</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СтруктураМодуляОбластьИзмененаКонтекстноеМеню" id="401"/>
+									<ExtendedTooltip name="СтруктураМодуляОбластьИзмененаРасширеннаяПодсказка" id="402"/>
+								</CheckBoxField>
 								<ColumnGroup name="СтруктураМодуляГруппаСлужебная" id="367">
 									<Title>
 										<v8:item>
@@ -596,6 +1015,7 @@
 													<AutoMaxWidth>false</AutoMaxWidth>
 													<MaxWidth>5</MaxWidth>
 													<HorizontalStretch>false</HorizontalStretch>
+													<TextColor>web:SteelBlue</TextColor>
 													<ContextMenu name="ДокументЛевыйНомерСтрокиКонтекстноеМеню" id="292"/>
 													<ExtendedTooltip name="ДокументЛевыйНомерСтрокиРасширеннаяПодсказка" id="293"/>
 												</InputField>
@@ -656,6 +1076,25 @@
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаДокументПравыйРасширеннаяПодсказка" id="259"/>
 									<ChildItems>
+										<UsualGroup name="ГруппаРеквизитыМетодаФайл2" id="441">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа реквизиты метода файл2</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа реквизиты метода файл2</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаРеквизитыМетодаФайл2РасширеннаяПодсказка" id="442"/>
+										</UsualGroup>
 										<Table name="ДокументПравый" id="260">
 											<Representation>List</Representation>
 											<ReadOnly>true</ReadOnly>
@@ -712,6 +1151,7 @@
 													<AutoMaxWidth>false</AutoMaxWidth>
 													<MaxWidth>5</MaxWidth>
 													<HorizontalStretch>false</HorizontalStretch>
+													<TextColor>web:SteelBlue</TextColor>
 													<ContextMenu name="ДокументПравыйНомерСтрокиКонтекстноеМеню" id="304"/>
 													<ExtendedTooltip name="ДокументПравыйНомерСтрокиРасширеннаяПодсказка" id="305"/>
 												</InputField>
@@ -899,6 +1339,7 @@
 													<Width>12</Width>
 													<MaxWidth>15</MaxWidth>
 													<HorizontalStretch>false</HorizontalStretch>
+													<TextColor>web:SteelBlue</TextColor>
 													<ContextMenu name="ОбластиСтроки1КонтекстноеМеню" id="145"/>
 													<ExtendedTooltip name="ОбластиСтроки1РасширеннаяПодсказка" id="146"/>
 												</InputField>
@@ -963,6 +1404,7 @@
 															<Width>4</Width>
 															<AutoMaxWidth>false</AutoMaxWidth>
 															<MaxWidth>4</MaxWidth>
+															<TextColor>web:SteelBlue</TextColor>
 															<ContextMenu name="ОбластиНачСтроки1КонтекстноеМеню" id="105"/>
 															<ExtendedTooltip name="ОбластиНачСтроки1РасширеннаяПодсказка" id="106"/>
 														</InputField>
@@ -981,6 +1423,7 @@
 															<Width>4</Width>
 															<AutoMaxWidth>false</AutoMaxWidth>
 															<MaxWidth>4</MaxWidth>
+															<TextColor>web:SteelBlue</TextColor>
 															<ContextMenu name="ОбластиКонСтроки1КонтекстноеМеню" id="108"/>
 															<ExtendedTooltip name="ОбластиКонСтроки1РасширеннаяПодсказка" id="109"/>
 														</InputField>
@@ -1072,6 +1515,7 @@
 													<Width>12</Width>
 													<MaxWidth>15</MaxWidth>
 													<HorizontalStretch>false</HorizontalStretch>
+													<TextColor>web:SteelBlue</TextColor>
 													<ContextMenu name="ОбластиСтроки2КонтекстноеМеню" id="151"/>
 													<ExtendedTooltip name="ОбластиСтроки2РасширеннаяПодсказка" id="152"/>
 												</InputField>
@@ -1136,6 +1580,7 @@
 															<Width>4</Width>
 															<AutoMaxWidth>false</AutoMaxWidth>
 															<MaxWidth>4</MaxWidth>
+															<TextColor>web:SteelBlue</TextColor>
 															<ContextMenu name="ОбластиНачСтроки2КонтекстноеМеню" id="114"/>
 															<ExtendedTooltip name="ОбластиНачСтроки2РасширеннаяПодсказка" id="115"/>
 														</InputField>
@@ -1154,6 +1599,7 @@
 															<Width>4</Width>
 															<AutoMaxWidth>false</AutoMaxWidth>
 															<MaxWidth>4</MaxWidth>
+															<TextColor>web:SteelBlue</TextColor>
 															<ContextMenu name="ОбластиКонСтроки2КонтекстноеМеню" id="117"/>
 															<ExtendedTooltip name="ОбластиКонСтроки2РасширеннаяПодсказка" id="118"/>
 														</InputField>
@@ -1297,6 +1743,7 @@
 													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
 													<Width>12</Width>
 													<HorizontalStretch>false</HorizontalStretch>
+													<TextColor>web:SteelBlue</TextColor>
 													<ContextMenu name="МетодыСтроки1КонтекстноеМеню" id="212"/>
 													<ExtendedTooltip name="МетодыСтроки1РасширеннаяПодсказка" id="213"/>
 												</InputField>
@@ -1328,6 +1775,51 @@
 													<ContextMenu name="МетодыИмяМетода1КонтекстноеМеню" id="157"/>
 													<ExtendedTooltip name="МетодыИмяМетода1РасширеннаяПодсказка" id="158"/>
 												</InputField>
+												<CheckBoxField name="МетодыЭтоАсинх1" id="403">
+													<DataPath>Методы.ЭтоАсинх1</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Асинх</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="МетодыЭтоАсинх1КонтекстноеМеню" id="404"/>
+													<ExtendedTooltip name="МетодыЭтоАсинх1РасширеннаяПодсказка" id="405"/>
+												</CheckBoxField>
+												<CheckBoxField name="МетодыЭтоЭкспорт1" id="406">
+													<DataPath>Методы.ЭтоЭкспорт1</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Экспорт</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="МетодыЭтоЭкспорт1КонтекстноеМеню" id="407"/>
+													<ExtendedTooltip name="МетодыЭтоЭкспорт1РасширеннаяПодсказка" id="408"/>
+												</CheckBoxField>
+												<InputField name="МетодыДирективаКомпиляции1" id="409">
+													<DataPath>Методы.ДирективаКомпиляции1</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Компиляция</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<Width>12</Width>
+													<ContextMenu name="МетодыДирективаКомпиляции1КонтекстноеМеню" id="410"/>
+													<ExtendedTooltip name="МетодыДирективаКомпиляции1РасширеннаяПодсказка" id="411"/>
+												</InputField>
 												<ColumnGroup name="МетодыГруппаСтроки1" id="189">
 													<Title>
 														<v8:item>
@@ -1358,6 +1850,7 @@
 															<Width>4</Width>
 															<AutoMaxWidth>false</AutoMaxWidth>
 															<MaxWidth>4</MaxWidth>
+															<TextColor>web:SteelBlue</TextColor>
 															<ContextMenu name="МетодыНачСтроки1КонтекстноеМеню" id="160"/>
 															<ExtendedTooltip name="МетодыНачСтроки1РасширеннаяПодсказка" id="161"/>
 														</InputField>
@@ -1374,6 +1867,7 @@
 															<Width>4</Width>
 															<AutoMaxWidth>false</AutoMaxWidth>
 															<MaxWidth>4</MaxWidth>
+															<TextColor>web:SteelBlue</TextColor>
 															<ContextMenu name="МетодыКонСтроки1КонтекстноеМеню" id="163"/>
 															<ExtendedTooltip name="МетодыКонСтроки1РасширеннаяПодсказка" id="164"/>
 														</InputField>
@@ -1430,6 +1924,14 @@
 														</InputField>
 													</ChildItems>
 												</ColumnGroup>
+												<InputField name="МетодыКлючОбласти1" id="397">
+													<DataPath>Методы.КлючОбласти1</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
+													<Width>15</Width>
+													<ContextMenu name="МетодыКлючОбласти1КонтекстноеМеню" id="398"/>
+													<ExtendedTooltip name="МетодыКлючОбласти1РасширеннаяПодсказка" id="399"/>
+												</InputField>
 											</ChildItems>
 										</ColumnGroup>
 										<ColumnGroup name="МетодыГруппаФайл2" id="95">
@@ -1463,6 +1965,7 @@
 													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
 													<Width>12</Width>
 													<HorizontalStretch>false</HorizontalStretch>
+													<TextColor>web:SteelBlue</TextColor>
 													<ContextMenu name="МетодыСтроки2КонтекстноеМеню" id="218"/>
 													<ExtendedTooltip name="МетодыСтроки2РасширеннаяПодсказка" id="219"/>
 												</InputField>
@@ -1494,6 +1997,51 @@
 													<ContextMenu name="МетодыИмяМетода2КонтекстноеМеню" id="166"/>
 													<ExtendedTooltip name="МетодыИмяМетода2РасширеннаяПодсказка" id="167"/>
 												</InputField>
+												<CheckBoxField name="МетодыЭтоАсинх2" id="412">
+													<DataPath>Методы.ЭтоАсинх2</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Асинх</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="МетодыЭтоАсинх2КонтекстноеМеню" id="413"/>
+													<ExtendedTooltip name="МетодыЭтоАсинх2РасширеннаяПодсказка" id="414"/>
+												</CheckBoxField>
+												<CheckBoxField name="МетодыЭтоЭкспорт2" id="415">
+													<DataPath>Методы.ЭтоЭкспорт2</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Экспорт</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="МетодыЭтоЭкспорт2КонтекстноеМеню" id="416"/>
+													<ExtendedTooltip name="МетодыЭтоЭкспорт2РасширеннаяПодсказка" id="417"/>
+												</CheckBoxField>
+												<InputField name="МетодыДирективаКомпиляции2" id="418">
+													<DataPath>Методы.ДирективаКомпиляции2</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Компиляция</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<Width>12</Width>
+													<ContextMenu name="МетодыДирективаКомпиляции2КонтекстноеМеню" id="419"/>
+													<ExtendedTooltip name="МетодыДирективаКомпиляции2РасширеннаяПодсказка" id="420"/>
+												</InputField>
 												<ColumnGroup name="МетодыГруппаСтроки2" id="193">
 													<Title>
 														<v8:item>
@@ -1522,6 +2070,7 @@
 															</Title>
 															<EditMode>EnterOnInput</EditMode>
 															<Width>4</Width>
+															<TextColor>web:SteelBlue</TextColor>
 															<ContextMenu name="МетодыНачСтроки2КонтекстноеМеню" id="169"/>
 															<ExtendedTooltip name="МетодыНачСтроки2РасширеннаяПодсказка" id="170"/>
 														</InputField>
@@ -1536,6 +2085,7 @@
 															</Title>
 															<EditMode>EnterOnInput</EditMode>
 															<Width>4</Width>
+															<TextColor>web:SteelBlue</TextColor>
 															<ContextMenu name="МетодыКонСтроки2КонтекстноеМеню" id="172"/>
 															<ExtendedTooltip name="МетодыКонСтроки2РасширеннаяПодсказка" id="173"/>
 														</InputField>
@@ -1592,15 +2142,16 @@
 														</InputField>
 													</ChildItems>
 												</ColumnGroup>
+												<InputField name="МетодыКлючОбласти" id="174">
+													<DataPath>Методы.КлючОбласти2</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
+													<Width>15</Width>
+													<ContextMenu name="МетодыКлючОбластиКонтекстноеМеню" id="175"/>
+													<ExtendedTooltip name="МетодыКлючОбластиРасширеннаяПодсказка" id="176"/>
+												</InputField>
 											</ChildItems>
 										</ColumnGroup>
-										<InputField name="МетодыКлючОбласти" id="174">
-											<DataPath>Методы.КлючОбласти2</DataPath>
-											<ReadOnly>true</ReadOnly>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="МетодыКлючОбластиКонтекстноеМеню" id="175"/>
-											<ExtendedTooltip name="МетодыКлючОбластиРасширеннаяПодсказка" id="176"/>
-										</InputField>
 									</ChildItems>
 								</Table>
 							</ChildItems>
@@ -2036,6 +2587,22 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
+				<Column name="ПолеСортировки" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поле сортировки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="Методы" id="7">
@@ -2147,7 +2714,7 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Ключ области2</v8:content>
+							<v8:content>Ключ области</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -2364,6 +2931,118 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
+				<Column name="ПолеСортировки" id="22">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поле сортировки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЭтоАсинх1" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это асинх</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЭтоЭкспорт1" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это экспорт</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДирективаКомпиляции1" id="25">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Директива компиляции</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>30</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЭтоАсинх2" id="26">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это асинх</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЭтоЭкспорт2" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это экспорт</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДирективаКомпиляции2" id="28">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Директива компиляции</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>30</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЭтоФункция1" id="29">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это функция1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЭтоФункция2" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это функция2</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="ТекстПодготовленный1" id="8">
@@ -2483,6 +3162,28 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
+				<Column name="ЭтоКомментарий" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЭтоДиректива" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это директива</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="ДокументПравый" id="11">
@@ -2570,6 +3271,28 @@
 							<v8:Length>36</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЭтоКомментарий" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЭтоДиректива" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это директива</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
 			</Columns>
@@ -2739,7 +3462,199 @@
 						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
+				<Column name="КлючОбласти1" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключ области</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КлючОбласти2" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключ области</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОбластьИзменена" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Область изменена</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЭтоАсинх1" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это асинх</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЭтоЭкспорт1" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это экспорт</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДирективаКомпиляции1" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Директива компиляции</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>30</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЭтоАсинх2" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это асинх</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЭтоЭкспорт2" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это экспорт</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДирективаКомпиляции2" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Директива компиляции</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>30</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТипМетода1" id="21">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип метода1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>5</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТипМетода2" id="22">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип метода2</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>5</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
 			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаМетодовБезОбластей" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица методов без областей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ФильтрДерева" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фильтр дерева</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидСтруктурыМодуля" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид структуры модуля</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
@@ -2853,86 +3768,6 @@
 			<dcsset:item>
 				<dcsset:selection>
 					<dcsset:item>
-						<dcsset:field>ДокументЛевый</dcsset:field>
-					</dcsset:item>
-				</dcsset:selection>
-				<dcsset:filter>
-					<dcsset:item xsi:type="dcsset:FilterItemComparison">
-						<dcsset:left xsi:type="dcscor:Field">ДокументЛевый.Знак</dcsset:left>
-						<dcsset:comparisonType>Equal</dcsset:comparisonType>
-						<dcsset:right xsi:type="xs:string">-</dcsset:right>
-					</dcsset:item>
-				</dcsset:filter>
-				<dcsset:appearance>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>ЦветФона</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">web:MistyRose</dcscor:value>
-					</dcscor:item>
-				</dcsset:appearance>
-			</dcsset:item>
-			<dcsset:item>
-				<dcsset:selection>
-					<dcsset:item>
-						<dcsset:field>ДокументЛевый</dcsset:field>
-					</dcsset:item>
-				</dcsset:selection>
-				<dcsset:filter>
-					<dcsset:item xsi:type="dcsset:FilterItemComparison">
-						<dcsset:left xsi:type="dcscor:Field">ДокументЛевый.Тип</dcsset:left>
-						<dcsset:comparisonType>Equal</dcsset:comparisonType>
-						<dcsset:right xsi:type="xs:string">Пустая</dcsset:right>
-					</dcsset:item>
-				</dcsset:filter>
-				<dcsset:appearance>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>ЦветФона</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">#E4E4E4</dcscor:value>
-					</dcscor:item>
-				</dcsset:appearance>
-			</dcsset:item>
-			<dcsset:item>
-				<dcsset:selection>
-					<dcsset:item>
-						<dcsset:field>ДокументПравый</dcsset:field>
-					</dcsset:item>
-				</dcsset:selection>
-				<dcsset:filter>
-					<dcsset:item xsi:type="dcsset:FilterItemComparison">
-						<dcsset:left xsi:type="dcscor:Field">ДокументПравый.Знак</dcsset:left>
-						<dcsset:comparisonType>Equal</dcsset:comparisonType>
-						<dcsset:right xsi:type="xs:string">+</dcsset:right>
-					</dcsset:item>
-				</dcsset:filter>
-				<dcsset:appearance>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>ЦветФона</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">web:MintCream</dcscor:value>
-					</dcscor:item>
-				</dcsset:appearance>
-			</dcsset:item>
-			<dcsset:item>
-				<dcsset:selection>
-					<dcsset:item>
-						<dcsset:field>ДокументПравый</dcsset:field>
-					</dcsset:item>
-				</dcsset:selection>
-				<dcsset:filter>
-					<dcsset:item xsi:type="dcsset:FilterItemComparison">
-						<dcsset:left xsi:type="dcscor:Field">ДокументПравый.Тип</dcsset:left>
-						<dcsset:comparisonType>Equal</dcsset:comparisonType>
-						<dcsset:right xsi:type="xs:string">Пустая</dcsset:right>
-					</dcsset:item>
-				</dcsset:filter>
-				<dcsset:appearance>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>ЦветФона</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">#E4E4E4</dcscor:value>
-					</dcscor:item>
-				</dcsset:appearance>
-			</dcsset:item>
-			<dcsset:item>
-				<dcsset:selection>
-					<dcsset:item>
 						<dcsset:field>СтруктураМодуля</dcsset:field>
 					</dcsset:item>
 				</dcsset:selection>
@@ -2995,6 +3830,166 @@
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>ЦветФона</dcscor:parameter>
 						<dcscor:value xsi:type="v8ui:Color">web:AliceBlue</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДокументЛевый</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДокументЛевый.Знак</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">-</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:MistyRose</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДокументЛевый</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДокументЛевый.Тип</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">Пустая</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДокументЛевыйЗначение</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДокументЛевый.ЭтоДиректива</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#963200</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДокументЛевыйЗначение</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДокументЛевый.ЭтоКомментарий</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#008000</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДокументПравый</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДокументПравый.Знак</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">+</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:MintCream</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДокументПравый</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДокументПравый.Тип</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">Пустая</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#E6E6E6</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДокументПравыйЗначение</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДокументПравый.ЭтоДиректива</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#963200</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДокументПравыйЗначение</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДокументПравый.ЭтоКомментарий</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#008000</dcscor:value>
 					</dcscor:item>
 				</dcsset:appearance>
 			</dcsset:item>
