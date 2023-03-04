@@ -16,41 +16,6 @@
 				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 				<ExtendedTooltip name="ФормаРежимОтладкиРасширеннаяПодсказка" id="380"/>
 			</Button>
-			<Popup name="ФормаГруппаЗаполнить" id="371">
-				<Title>
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Заполнить</v8:content>
-					</v8:item>
-				</Title>
-				<ToolTip>
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Форма группа заполнить</v8:content>
-					</v8:item>
-				</ToolTip>
-				<ExtendedTooltip name="ФормаГруппаЗаполнитьРасширеннаяПодсказка" id="372"/>
-				<ChildItems>
-					<Button name="ФормаЗаполнитьОбласти" id="373">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.ЗаполнитьОбласти</CommandName>
-						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-						<ExtendedTooltip name="ФормаЗаполнитьОбластиРасширеннаяПодсказка" id="374"/>
-					</Button>
-					<Button name="ФормаЗаполнитьМетоды" id="375">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.ЗаполнитьМетоды</CommandName>
-						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-						<ExtendedTooltip name="ФормаЗаполнитьМетодыРасширеннаяПодсказка" id="376"/>
-					</Button>
-					<Button name="ФормаЗаполнитьСтруктуру" id="377">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.ЗаполнитьСтруктуру</CommandName>
-						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-						<ExtendedTooltip name="ФормаЗаполнитьСтруктуруРасширеннаяПодсказка" id="378"/>
-					</Button>
-				</ChildItems>
-			</Popup>
 			<ButtonGroup name="ФормаГруппаВсеДействия" id="395">
 				<Title>
 					<v8:item>
@@ -4134,51 +4099,6 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ВыполнитьСравнение</Action>
-		</Command>
-		<Command name="ЗаполнитьОбласти" id="2">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Области</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Заполнить области</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ЗаполнитьОбласти</Action>
-		</Command>
-		<Command name="ЗаполнитьМетоды" id="3">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Методы</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Заполнить методы</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ЗаполнитьМетоды</Action>
-		</Command>
-		<Command name="ЗаполнитьСтруктуру" id="4">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Структуру</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Заполнить структуру</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ЗаполнитьСтруктуру</Action>
 		</Command>
 		<Command name="РежимОтладки" id="5">
 			<Title>
